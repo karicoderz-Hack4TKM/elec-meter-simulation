@@ -20,6 +20,9 @@ elif app.config["ENV"] == "development":
 import resources.sample.helloworld as hw
 api.add_resource(hw.HelloWorld, '/')
 
+#meter stimulate
+import resources.automate.meter as mt
+api.add_resource(mt.stimulate,'/stimulate')
 
 if __name__ == '__main__':
     app.run(debug=True,host ='0.0.0.0',port=app.config["API_PORT"])
