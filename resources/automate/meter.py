@@ -22,7 +22,7 @@ class stimulate(Resource):
                     d3 = datetime(2020, 5, 13, 9, 0, 0)
                     d4 = datetime(2020, 5, 13, 17, 0, 0)
                     datetime_new = date
-                    while(datetime_new != datetime(2021,1,3,0,0,0)):
+                    while(datetime_new != datetime(2021,1,6,0,0,0)):
                         datetime_new = datetime_new + timedelta(minutes=minutes_to_add)
 
                         for j in ls:
